@@ -7,32 +7,29 @@ import { configureStore } from "@reduxjs/toolkit";
 
 import counterReducer from './Counter';
 
-
-import cartitemsReducer from "./Cart"
-
-
+import cartitemsReducer from "./Cart";
+import adminNameReducer from "./aadminname";
 
 
-export default configureStore({
+
+
+
+
+export default configureStore ({
 
 
     reducer:{
 
-        counter:counterReducer ,
-        cartitems: cartitemsReducer
-        
-       
-        
-    
+
+        counter:counterReducer,
+
+        cartitems:cartitemsReducer,
+           
+        adminName:adminNameReducer,
     }
-
-   
-
-
 
 
 })
-
 
 
 
